@@ -1,0 +1,41 @@
+Screenshots of what you will be building are provided in screenshots.pdf.
+
+You are tasked to build a front end web client that takes in the following names
+
+["Hercules","Bob","Alice","Ted","Frank","Pat"]
+
+Sorts the names and display in a responsive grid as depicted in screenshots.pdf. Once the tiles are displayed and sorted, make an input textbox that filters the tiles on key up. This is also shown in the screenshots.pdf.
+
+Constraints:
+
+1 —--
+
+For all fonts, used the provided google font Raleway. For the application, use the provided project framework arc.
+
+More information for how to use arc is provided here:
+
+https://github.com/diegohaz/arc
+
+2 ———
+
+For CSS responsive work, make the following break points:
+
+When the screen is 400px or smaller, make all font size 18px. Otherwise make it 36px.
+
+Also for your grid, do not use bootstrap or google ui... instead use css flexbox.
+
+3 ——-
+
+To solve the problem, use Redux. More information on redux will be here:
+
+http://redux.js.org/
+
+As a hint, your will use pure components in react and tie it together with redux. Information on pure vs. stateful components can be here:
+
+https://facebook.github.io/react/docs/components-and-props.html
+
+Questions:
+
+What is atomic design?
+
+Lastly, when doing this task try to break the problem down into easy to understand parts. Try to estimate the time for the task and estimate a breakdown of the problem. Then after working through the project, note the actual time spent.
