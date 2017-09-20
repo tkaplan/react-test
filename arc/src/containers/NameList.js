@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { handleKeyUp } from '../store/key/action'
+
 class NameList extends Component {
   handleEvent(key){
     console.log(key)
@@ -30,7 +31,12 @@ class NameList extends Component {
 }
 const getFilteredNames = (names, key) => {
   if (key == null) return names
-  return names.filter((name)=> name[0].toLowerCase() == key )
+  let filteredNames = names.filter((name)=> name[0].toLowerCase() == key )
+  if(filteredNames.length == 0){
+    return names
+  }else{
+    return filteredNames
+  }
 }
 const mapStateToProps = (state) =>{
   return {
