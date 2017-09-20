@@ -30,6 +30,7 @@ class NameList extends Component {
   }
 }
 const getFilteredNames = (names, key) => {
+  names.sort()
   if (key == null) return names
   let filteredNames = names.filter((name)=> name[0].toLowerCase() == key )
   if(filteredNames.length == 0){

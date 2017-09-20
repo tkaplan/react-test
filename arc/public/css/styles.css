@@ -6,26 +6,34 @@
 ul{
   list-style-type: none;
   display: flex;
-  width: 100%;
+  flex-flow: wrap;
 }
 li{
   border: 2px solid black;
   margin: 5px;
   padding: 15px;
-  height: 50px;
-  flex: 1;
+  min-height: 50px;
+  min-width: 100px;
 }
 input{
   display:  inline-block;
   margin-left: 40px;
 }
 
-@media screen and (min-width:401) and (max-width: 640px){
-
+@media screen and (min-width:601) and (max-width: 800px){
+  li{
+    flex-basis: 55%;
+  }
+  ul{
+    width: 600px;
+  }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
   *{
     font-size: 18px;
+  }
+  li{
+    flex-basis: 30%;
   }
 
 }
